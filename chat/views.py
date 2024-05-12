@@ -13,6 +13,8 @@ from langchain.chains import ConversationChain
 from langchain.llms import OpenAI
 from django.conf import settings
 
+key_openAI = settings.OPENAI_API_KEY
+
 llm = OpenAI()
 
 memory = ConversationBufferMemory()
